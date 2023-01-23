@@ -17,11 +17,11 @@ let handler  = async (m, { itsu, args, usedPrefix, command }) => {
 handler.help = ['group *open / close*']
 handler.tags = ['group']
 handler.command = /^(group)$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
+handler.owner = true
+handler.mods = true
+handler.premium = true 
+handler.group = true 
+handler.private = true 
 handler.admin = true
 handler.botAdmin = true
 handler.fail = null
