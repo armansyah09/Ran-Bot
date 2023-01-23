@@ -740,9 +740,9 @@ vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;WA;;;\nFN:WA\nTEL;type=CELL;type=VOICE;waid
           }
         }
         break
-      case 'promote':
+      case 'demot':
         text = (chat.sPromote || this.spromote || itsu.spromote || '@user ```is now Admin```')
-      case 'demote':
+      case 'promote':
         if (!text) text = (chat.sDemote || this.sdemote || itsu.sdemote || '@user ```is no longer Admin```')
         text = text.replace('@user', '@' + participants[0].split('@')[0])
         if (chat.detect) this.sendMessage(jid, text, MessageType.extendedText, {
